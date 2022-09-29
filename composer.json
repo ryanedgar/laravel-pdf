@@ -1,14 +1,28 @@
 {
-    "name": "niklasravnsborg/laravel-pdf",
+    "name": "ryanedgar/laravel-pdf",
     "description": "Generate PDFs in Laravel with this mPDF wrapper.",
-    "keywords": ["mpdf", "pdf", "laravel"],
+    "keywords": [
+        "mpdf",
+        "pdf",
+        "laravel"
+    ],
     "license": "MIT",
     "scripts": {
         "test": "phpunit --colors=always"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/ryanedgar/log.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/ryanedgar/mpdf.git"
+        }
+    ],
     "require": {
         "php": ">=7.0",
-        "mpdf/mpdf": "^8.0"
+        "ryanedgar/mpdf": "^9.0.0"
     },
     "autoload": {
         "psr-4": {
@@ -31,7 +45,7 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.4",
+        "phpunit/phpunit": "^7.4 || ^8.0",
         "orchestra/testbench": "^3.7"
     }
 }
